@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>sledzenie wydatkow</h1>
+        <form id="expense-form">
+            <label for="expense-name">Wydatek:</label>
+            <input type="text" id="expense-name" required>
+
+            <label for="expense-amount">kwota </label>
+            <input type="number" id="expense-amount" required>
+
+            <label for="expense-date">data </label>
+            <input type="date" id="expense-date" required>
+
+            <button type="button"  onclick="addExpanse()">dodaj </button>
+        </form>
+        <div  id="expense-list">
+
+        </div>
+
+        <div  id="total-expanses">
+            <p>calkowita suma wydatkow <span id="total-amount">0.00</span></p>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
